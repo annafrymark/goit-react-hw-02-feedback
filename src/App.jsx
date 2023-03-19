@@ -5,23 +5,6 @@ import Stastistics from './components/Stastistics';
 import FeedbackOptions from './components/FeedbackOptions';
 import css from './app.module.css';
 
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
-
 class App extends Component {
   state = {
     good: 0,
