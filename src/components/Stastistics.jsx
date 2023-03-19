@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Stastistics = ({ good, neutral, bad, total, positivePercentage }) => {
   if (total === 0) {
     return <p>There is no feedback</p>;
@@ -11,6 +13,14 @@ const Stastistics = ({ good, neutral, bad, total, positivePercentage }) => {
         <p>Positive feedback: {positivePercentage} %</p>
       </div>
     );
+};
+
+Stastistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.number,
+  positivePercentage: PropTypes.number,
 };
 
 export default Stastistics;

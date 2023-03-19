@@ -1,4 +1,5 @@
 import css from "app.module.css";
+import PropTypes from 'prop-types';
 
 const FeedbackOptions = ({ onLeaveFeedback }) => (
   <div className={css.buttons}>
@@ -13,5 +14,9 @@ const FeedbackOptions = ({ onLeaveFeedback }) => (
     </button>
   </div>
 );
+
+FeedbackOptions.propTypes = {
+  onLeaveFeedback:PropTypes.objectOf(PropTypes.number),
+};
 
 export default FeedbackOptions;
