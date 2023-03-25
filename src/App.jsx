@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Section from './components/section/Section';
-import Stastistics from './components/Stastistics';
+import Stastistics from './components/statistics/Stastistics';
 import FeedbackOptions from './components/feedbackOptions/FeedbackOptions';
 import css from './app.module.css';
 
